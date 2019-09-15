@@ -1,0 +1,113 @@
+:root {
+    --p1-color: red;
+    --p2-color: blue;
+    --bg-color: black;
+    --box-size: 10rem;
+    --gap-size: 1rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* board styles */
+.game-board {
+    display: grid;
+    height: 100%;
+    grid-template-columns: var(--box-size) var(--box-size) var(--box-size);
+    grid-template-rows: var(--box-size) var(--box-size) var(--box-size);
+    grid-gap: var(--gap-size)
+}
+.game-board--p1 {
+    background-color: var(--p1-color)
+}
+.game-board--p2 {
+    background-color: var(--p2-color)
+}
+
+.header {
+  display: grid;
+  background-color: var(--bg-color);
+}
+.scoreboard {
+  background-color: var(--bg-color);
+}
+.scoreboard__container {
+  align-items: center;
+  display: flex;
+  min-height: 3rem;
+  padding-bottom: .8rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.scoreboard__container--spaced {
+  justify-content: space-between;
+}
+#p-one {
+  font-family: arial;
+  font-size: 2rem;
+}
+#p-two {
+  font-family: arial;
+  font-size: 2rem;
+}
+.p-one {
+  color: var(--p1-color)
+}
+.p-two {
+  color: var(--p2-color)
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+#turn-bar {
+  height: 1rem;
+  width: 100%
+}
+.p-one--turn {
+  background-color: var(--p1-color)
+}
+.p-two--turn {
+  background-color: var(--p2-color)
+}
+ /* for some css stylings */
+body {
+  justify-content: center;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+}
+/* box styles */
+.box {
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10rem;
+}
+.box--p1{
+  color: var(--p1-color)
+}
+.box--p2{
+    color: var(--p2-color)
+}
+.win-box--p1 {
+  border: 1rem solid var(--p1-color)
+}
+.win-box--p2 {
+  border: 1rem solid var(--p2-color)
+}
+#reset-button { 
+  background-color: black;
+  color: white;
+  border-left: 4px solid var(--p1-color);
+  border-right: 4px solid var(--p1-color);
+  border-top: 4px solid var(--p2-color);
+  border-bottom: 4px solid var(--p2-color);
+  padding: 1rem;
+  display: flex;
+  margin: 0 auto;
+  font-family: arial;
+}

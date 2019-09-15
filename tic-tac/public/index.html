@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="./styles/styles.css" rel="stylesheet">
+        <title>tic-tac-toe</title>
+
+    </head>
+    <body>
+        <header class="header">
+            <h1>TIC TAC TOE</h1>  
+        </header>
+        <div class="scoreboard">
+            <div class="scoreboard__container scoreboard__container--spaced">
+            <div id="p-one" class="p-one">
+                <h4>PLAYER ONE</h4>
+                <div id='p-one-wins' class="p-one">&nbsp</div>
+            </div>
+            <div>
+                <h2 id="win-space"></h2>
+            </div>
+            
+            <div id="p-two" class="p-two">
+                <h4>PLAYER TWO</h4>
+                <div id="p-two-wins" class="p-two">&nbsp</div>
+            </div>
+            </div>
+        </div>
+        <div id="turn-bar"></div>
+        <button id="reset-button">RESET GAME</button>
+        <div class="game-container">
+            <div id="game-board" class="game-board">
+                <button id="one" class="box">-</button>
+                <button id="two" class="box">-</button>
+                <button id="three" class="box">-</button>
+                <button id="four" class="box">-</button>
+                <button id="five" class="box">-</button>
+                <button id="six" class="box">-</button>
+                <button id="seven" class="box">-</button>
+                <button id="eight" class="box">-</button>
+                <button id="nine" class="box">-</button>
+            </div>
+        </div>
+        <script src="./scripts/index-bundle.js"></script>
+    </body>
+</html>
